@@ -1,0 +1,15 @@
+{
+    "name":"sasezaki/diggin-guzzle4-charset-subscriber",
+    "description":"Guzzle Subscriber auto convert charset encoding to UTF-8",
+    "license":"BSD-3-Clause",
+    "require": {
+        "php": "~5.4",
+        "guzzlehttp/guzzle": "~4.1",
+        "diggin/diggin-http-charset": "~0.8"
+    },
+    "autoload": {
+        "classmap": [
+            "./src/DigginGuzzle4CharsetSubscriber/CharsetSubscriber.php"
+        ]
+    }
+}
