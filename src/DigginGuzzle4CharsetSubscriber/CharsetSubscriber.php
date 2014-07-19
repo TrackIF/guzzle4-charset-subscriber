@@ -33,7 +33,7 @@ class CharsetSubscriber implements SubscriberInterface
         if (!empty($redirect) || !preg_match('#^text/html#i', $contentType)) {
             return;
         }
-        /** @var GuzzleHttp\Stream\StreamInterface */
+        /** @var GuzzleHttp\Stream\StreamInterface $body */
         $body = $res->getBody();
         $bodyContent = $this->getCharsetFront()->convert((string)$body, [
             'content-type' => $contentType,
