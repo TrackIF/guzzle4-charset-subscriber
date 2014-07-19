@@ -3,6 +3,9 @@ guzzle4-charset-subscriber
 
 A bridge Diggin_Http_Charset & Guzzle4. enable auto convert charset encoding to UTF-8.
 
+### INSTALL
+`php composer.phar require sasezaki/diggin-guzzle4-charset-subscriber`
+
 ### USAGE
 
 ``` php
@@ -25,4 +28,4 @@ var_dump(strip_tags($res->getBody()->__toString())); // will be output as UTF-8
 
 ### Guzzle3
 If you looking for Guzzle3.
-https://github.com/diggin/guzzle-plugin-AutoCharsetEncodingPlugin
+  - https://github.com/diggin/guzzle-plugin-AutoCharsetEncodingPlugin
